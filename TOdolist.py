@@ -26,3 +26,10 @@ def load_tasks():
 def save_tasks():
     with open("tasks.json", "w") as f:
         json.dump(tasks, f)
+        
+# Function to update the listbox with tasks
+def update_listbox(filter_text=""):
+    listbox.delete(0, tk.END)
+    for task in tasks:
+        task_text = f"{task['task']} - Due: {task['due_date']} - Priority: {task['priority']}"
+        if
