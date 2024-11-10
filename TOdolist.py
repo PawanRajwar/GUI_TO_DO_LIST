@@ -21,3 +21,8 @@ def load_tasks():
             update_listbox()
     except (FileNotFoundError, json.JSONDecodeError):
         tasks = []
+
+# Save tasks to a JSON file automatically
+def save_tasks():
+    with open("tasks.json", "w") as f:
+        json.dump(tasks, f)
