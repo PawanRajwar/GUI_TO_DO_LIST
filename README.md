@@ -15,3 +15,9 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 - Each task can include a due date, which is selected from a date picker widget (tkcalendar). This ensures only valid dates are entered.
 
 - Tasks can also be assigned one of three priority levels: High, Medium, or Low, using a dropdown menu to make organization clearer.
+
+### 4. Search Functionality:
+- The search bar enables users to filter tasks based on keywords, making it easy to locate specific tasks within a large list.
+
+### 5. Modern and Aesthetic GUI:
+- The interface features a dark, minimalist theme with contrasting button colors for a sleek, modern look. It is optimized for readability and usability, with a consistent color scheme throughout the app.
