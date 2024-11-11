@@ -29,3 +29,8 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 - Window Initialization: The main window is set up using Tkinter, with custom dimensions and a dark-themed color scheme for aesthetics.
 
 - Listbox: A Listbox widget displays the list of tasks. Each entry shows the task text, due date, and priority, providing an overview of all tasks. A scrollbar is added for convenience when there are many tasks.
+
+### 2. Automatic Data Handling:
+- Loading Tasks: The load_tasks() function reads data from tasks.json upon startup. If the file doesn’t exist or is empty, an empty list is initialized.
+
+- Saving Tasks: The save_tasks() function automatically writes the current task list to tasks.json each time a task is added, deleted, or cleared, ensuring tasks are consistently saved.
