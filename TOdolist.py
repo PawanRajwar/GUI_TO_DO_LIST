@@ -34,3 +34,10 @@ def update_listbox(filter_text=""):
         task_text = f"{task['task']} - Due: {task['due_date']} - Priority: {task['priority']}"
         if filter_text.lower() in task_text.lower():
             listbox.insert(tk.END, task_text)
+
+
+# Function to add a task with due date and priority
+def add_task():
+    task_text = task_entry.get()
+    due_date = due_date_entry.get_date().strftime("%Y-%m-%d")
+    priority = priority_var.get()
