@@ -21,3 +21,11 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 
 ### 5. Modern and Aesthetic GUI:
 - The interface features a dark, minimalist theme with contrasting button colors for a sleek, modern look. It is optimized for readability and usability, with a consistent color scheme throughout the app.
+
+
+## Code Structure and Explanation
+
+### 1. Main Interface:
+- Window Initialization: The main window is set up using Tkinter, with custom dimensions and a dark-themed color scheme for aesthetics.
+
+- Listbox: A Listbox widget displays the list of tasks. Each entry shows the task text, due date, and priority, providing an overview of all tasks. A scrollbar is added for convenience when there are many tasks.
