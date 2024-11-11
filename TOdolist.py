@@ -32,4 +32,5 @@ def update_listbox(filter_text=""):
     listbox.delete(0, tk.END)
     for task in tasks:
         task_text = f"{task['task']} - Due: {task['due_date']} - Priority: {task['priority']}"
-        if
+        if filter_text.lower() in task_text.lower():
+            listbox.insert(tk.END, task_text)
