@@ -48,3 +48,9 @@ def add_task():
     if priority == "Select Priority":
         messagebox.showwarning("Warning", "Please select a priority.")
         return
+    
+    tasks.append({"task": task_text, "due_date": due_date, "priority": priority})
+    task_entry.delete(0, tk.END)
+    priority_var.set("Select Priority")
+    update_listbox()
+    save_tasks()  # Automatically save after adding each task
