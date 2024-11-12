@@ -34,3 +34,10 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 - Loading Tasks: The load_tasks() function reads data from tasks.json upon startup. If the file doesn’t exist or is empty, an empty list is initialized.
 
 - Saving Tasks: The save_tasks() function automatically writes the current task list to tasks.json each time a task is added, deleted, or cleared, ensuring tasks are consistently saved.
+
+### 3. Task Addition:
+- Add Task: Users enter a task description in the entry box and can then select a due date and priority level. The app verifies that a task name, valid due date, and priority level are entered before adding it.
+
+- Due Date Picker: The DateEntry widget from tkcalendar allows users to pick only valid dates.
+
+- Priority Dropdown: Users select a priority level (High, Medium, Low) from a dropdown menu, allowing for organized task sorting.
