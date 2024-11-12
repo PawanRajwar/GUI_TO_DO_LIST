@@ -41,3 +41,10 @@ def add_task():
     task_text = task_entry.get()
     due_date = due_date_entry.get_date().strftime("%Y-%m-%d")
     priority = priority_var.get()
+    
+    if not task_text:
+        messagebox.showwarning("Warning", "Please enter a task.")
+        return
+    if priority == "Select Priority":
+        messagebox.showwarning("Warning", "Please select a priority.")
+        return
