@@ -63,3 +63,5 @@ def delete_task():
         del tasks[task_index]
         update_listbox()
         save_tasks()  # Automatically save after deleting a task
+    except IndexError:
+        messagebox.showwarning("Warning", "Please select a task to delete.")
