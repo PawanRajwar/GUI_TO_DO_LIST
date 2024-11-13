@@ -41,3 +41,8 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 - Due Date Picker: The DateEntry widget from tkcalendar allows users to pick only valid dates.
 
 - Priority Dropdown: Users select a priority level (High, Medium, Low) from a dropdown menu, allowing for organized task sorting.
+
+### 4. Task Deletion and Clear Functionality:
+- Delete Task: A task selected in the Listbox can be deleted by clicking "Delete Task." This action updates the Listbox display and automatically saves changes.
+
+- Clear All Tasks: The "Clear All" button removes all tasks after confirming, ensuring that no data is accidentally cleared.
