@@ -46,3 +46,6 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 - Delete Task: A task selected in the Listbox can be deleted by clicking "Delete Task." This action updates the Listbox display and automatically saves changes.
 
 - Clear All Tasks: The "Clear All" button removes all tasks after confirming, ensuring that no data is accidentally cleared.
+
+### 5. Search Functionality:
+- The search entry box allows users to filter tasks by entering keywords. The search_tasks() function compares the input with each task description, updating the Listbox to show only matching tasks.
