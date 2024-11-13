@@ -54,3 +54,12 @@ def add_task():
     priority_var.set("Select Priority")
     update_listbox()
     save_tasks()  # Automatically save after adding each task
+    
+
+# Function to delete a selected task
+def delete_task():
+    try:
+        task_index = listbox.curselection()[0]
+        del tasks[task_index]
+        update_listbox()
+        save_tasks()  # Automatically save after deleting a task
