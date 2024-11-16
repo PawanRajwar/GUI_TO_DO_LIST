@@ -79,3 +79,10 @@ def clear_tasks():
 def search_tasks():
     filter_text = search_entry.get()
     update_listbox(filter_text)
+
+
+# GUI Elements
+
+# Frame for listbox and scrollbar
+frame = tk.Frame(root, bg="#1c1c1e")
+frame.pack(pady=10)
