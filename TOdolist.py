@@ -65,3 +65,10 @@ def delete_task():
         save_tasks()  # Automatically save after deleting a task
     except IndexError:
         messagebox.showwarning("Warning", "Please select a task to delete.")
+
+
+# Function to clear all tasks
+def clear_tasks():
+    global tasks
+    if messagebox.askyesno("Confirmation", "Do you really want to clear all tasks?"):
+        tasks = []
