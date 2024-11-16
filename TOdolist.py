@@ -74,3 +74,8 @@ def clear_tasks():
         tasks = []
         update_listbox()
         save_tasks()  # Automatically save after clearing all tasks
+
+# Function to search tasks
+def search_tasks():
+    filter_text = search_entry.get()
+    update_listbox(filter_text)
