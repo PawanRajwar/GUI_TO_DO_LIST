@@ -86,3 +86,12 @@ def search_tasks():
 # Frame for listbox and scrollbar
 frame = tk.Frame(root, bg="#1c1c1e")
 frame.pack(pady=10)
+
+
+# Listbox to display tasks with modern aesthetics
+listbox = tk.Listbox(
+    frame,
+    width=50,
+    height=12,
+    font=("Helvetica", 12),
+    selectmode=tk.SINGLE,
