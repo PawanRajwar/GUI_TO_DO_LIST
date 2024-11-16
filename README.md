@@ -49,3 +49,10 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 
 ### 5. Search Functionality:
 - The search entry box allows users to filter tasks by entering keywords. The search_tasks() function compares the input with each task description, updating the Listbox to show only matching tasks.
+
+### 6. Button Styling and Layout:
+- Buttons are grouped within frames to maintain a clean and organized layout.
+
+- Buttons are styled with a modern look, using specific colors and fonts consistent with the app’s theme.
+
+- Add Task, Delete Task, Clear All, and Search buttons provide intuitive access to the main features.
