@@ -72,3 +72,5 @@ def clear_tasks():
     global tasks
     if messagebox.askyesno("Confirmation", "Do you really want to clear all tasks?"):
         tasks = []
+        update_listbox()
+        save_tasks()  # Automatically save after clearing all tasks
