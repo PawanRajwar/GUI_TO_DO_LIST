@@ -56,3 +56,10 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 - Buttons are styled with a modern look, using specific colors and fonts consistent with the app’s theme.
 
 - Add Task, Delete Task, Clear All, and Search buttons provide intuitive access to the main features.
+
+## Requirements
+- Python 3.x
+
+- tkinter (included with Python)
+
+- tkcalendar: Install this package by running pip install tkcalendar.
