@@ -113,3 +113,16 @@ scrollbar.config(command=listbox.yview)
 tk.Label(root, text="Task", font=("Helvetica", 12), bg="#1c1c1e", fg="#e4e4e6").pack(pady=(15, 5))
 task_entry = tk.Entry(root, font=("Helvetica", 12), width=30, bg="#3a3a3c", fg="#e4e4e6", insertbackground="#e4e4e6", relief=tk.FLAT)
 task_entry.pack(pady=(0, 10), ipady=8)
+
+# Due Date Label and Date Picker
+tk.Label(root, text="Due Date", font=("Helvetica", 12), bg="#1c1c1e", fg="#e4e4e6").pack(pady=(10, 5))
+due_date_entry = DateEntry(root, width=20, font=("Helvetica", 10), background="#3a3a3c", foreground="white", bd=2)
+due_date_entry.pack(pady=(0, 10))
+
+# Priority Label and Dropdown
+tk.Label(root, text="Priority", font=("Helvetica", 12), bg="#1c1c1e", fg="#e4e4e6").pack(pady=(10, 5))
+priority_options = ["High", "Medium", "Low"]
+priority_var = tk.StringVar(root)
+priority_var.set("Select Priority")
+priority_dropdown = ttk.Combobox(root, textvariable=priority_var, values=priority_options, font=("Helvetica", 10), state="readonly")
+priority_dropdown.pack(pady=(0, 20))
