@@ -159,3 +159,9 @@ search_entry.grid(row=0, column=0, padx=5, ipady=8)
 
 search_button = tk.Button(search_frame, text="Search", command=search_tasks, bg="#5e5ce6", fg="white", font=("Helvetica", 10), width=12, relief=tk.FLAT)
 search_button.grid(row=0, column=1, padx=5)
+
+# Load tasks on start
+load_tasks()
+
+# Run the main loop
+root.mainloop()
