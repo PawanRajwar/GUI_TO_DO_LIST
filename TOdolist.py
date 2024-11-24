@@ -95,3 +95,10 @@ listbox = tk.Listbox(
     height=12,
     font=("Helvetica", 12),
     selectmode=tk.SINGLE,
+    bg="#2c2c2e",
+    fg="#e4e4e6",
+    selectbackground="#5e5ce6",
+    highlightthickness=0,
+    bd=0,
+)
+listbox.pack(side=tk.LEFT, fill=tk.BOTH, padx=10, pady=10)
