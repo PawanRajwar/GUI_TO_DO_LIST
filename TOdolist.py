@@ -108,3 +108,8 @@ scrollbar = tk.Scrollbar(frame)
 scrollbar.pack(side=tk.RIGHT, fill=tk.BOTH)
 listbox.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=listbox.yview)
+
+# Entry box for adding new tasks
+tk.Label(root, text="Task", font=("Helvetica", 12), bg="#1c1c1e", fg="#e4e4e6").pack(pady=(15, 5))
+task_entry = tk.Entry(root, font=("Helvetica", 12), width=30, bg="#3a3a3c", fg="#e4e4e6", insertbackground="#e4e4e6", relief=tk.FLAT)
+task_entry.pack(pady=(0, 10), ipady=8)
