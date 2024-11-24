@@ -126,3 +126,15 @@ priority_var = tk.StringVar(root)
 priority_var.set("Select Priority")
 priority_dropdown = ttk.Combobox(root, textvariable=priority_var, values=priority_options, font=("Helvetica", 10), state="readonly")
 priority_dropdown.pack(pady=(0, 20))
+
+# Buttons with modern style
+button_frame = tk.Frame(root, bg="#1c1c1e")
+button_frame.pack(pady=10)
+
+button_style = {
+    "bg": "#5e5ce6",
+    "fg": "white",
+    "font": ("Helvetica", 10),
+    "width": 12,
+    "relief": tk.FLAT,
+}
