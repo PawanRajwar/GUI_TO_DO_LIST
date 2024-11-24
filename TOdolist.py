@@ -148,3 +148,14 @@ delete_button.grid(row=0, column=1, padx=5, pady=5)
 
 clear_button = tk.Button(button_frame, text="Clear All", command=clear_tasks, bg="#ff8a3d", fg="white", font=("Helvetica", 10), width=12, relief=tk.FLAT)
 clear_button.grid(row=0, column=2, padx=5, pady=5)
+
+
+# Search bar with modern style
+search_frame = tk.Frame(root, bg="#1c1c1e")
+search_frame.pack(pady=(20, 10))
+
+search_entry = tk.Entry(search_frame, font=("Helvetica", 12), width=22, bg="#3a3a3c", fg="#e4e4e6", insertbackground="#e4e4e6", relief=tk.FLAT)
+search_entry.grid(row=0, column=0, padx=5, ipady=8)
+
+search_button = tk.Button(search_frame, text="Search", command=search_tasks, bg="#5e5ce6", fg="white", font=("Helvetica", 10), width=12, relief=tk.FLAT)
+search_button.grid(row=0, column=1, padx=5)
