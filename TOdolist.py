@@ -102,3 +102,9 @@ listbox = tk.Listbox(
     bd=0,
 )
 listbox.pack(side=tk.LEFT, fill=tk.BOTH, padx=10, pady=10)
+
+# Scrollbar for the listbox
+scrollbar = tk.Scrollbar(frame)
+scrollbar.pack(side=tk.RIGHT, fill=tk.BOTH)
+listbox.config(yscrollcommand=scrollbar.set)
+scrollbar.config(command=listbox.yview)
