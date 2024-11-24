@@ -138,3 +138,13 @@ button_style = {
     "width": 12,
     "relief": tk.FLAT,
 }
+
+
+add_button = tk.Button(button_frame, text="Add Task", command=add_task, **button_style)
+add_button.grid(row=0, column=0, padx=5, pady=5)
+
+delete_button = tk.Button(button_frame, text="Delete Task", command=delete_task, bg="#e34c4c", fg="white", font=("Helvetica", 10), width=12, relief=tk.FLAT)
+delete_button.grid(row=0, column=1, padx=5, pady=5)
+
+clear_button = tk.Button(button_frame, text="Clear All", command=clear_tasks, bg="#ff8a3d", fg="white", font=("Helvetica", 10), width=12, relief=tk.FLAT)
+clear_button.grid(row=0, column=2, padx=5, pady=5)
