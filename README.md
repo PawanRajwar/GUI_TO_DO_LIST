@@ -46,8 +46,8 @@ This project is a **Modern To-Do List Application** built with Python's Tkinter 
 ## **🔧 Installation**
 ### Clone the repository:
 ```bash
-git clone https://github.com/your-repo-link/modern-to-do-list.git
-cd modern-to-do-list
+git clone https://github.com/PawanRajwar/GUI_TO_DO_LIST.git
+
 ```
 
 ### Install dependencies:
