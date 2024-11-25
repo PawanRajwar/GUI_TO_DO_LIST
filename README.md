@@ -57,6 +57,20 @@ This project is a Modern To-Do List Application built with Python's Tkinter GUI 
 
 - Add Task, Delete Task, Clear All, and Search buttons provide intuitive access to the main features.
 
+
+## Screenshots 
+
+![To-do list ](<Screenshot 2024-11-25 122402-1.png>)
+![Priority Functionality](<Screenshot 2024-11-25 122416-1.png>)
+![Added Task Screenshot](<Screenshot 2024-11-25 122431-1.png>)
+
+
+
+
+
+
+
+
 ## Requirements
 - Python 3.x
 
