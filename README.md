@@ -1,79 +1,102 @@
-# Modern To-Do List Application
-This project is a Modern To-Do List Application built with Python's Tkinter GUI toolkit. The app provides a clean, minimalist, and functional user interface for managing daily tasks, organizing them by priority, and setting due dates. This README file offers a comprehensive overview of the app’s functionality, design choices, and code structure.
+# **📝 Modern To-Do List Application**
 
-## Key Features
+---
 
-### 1. Task Management:
-- Add, delete, and clear tasks easily within a user-friendly interface.
+## **👨‍🏫 Submitted To**  
+**Dr. Prateek Raj Gautam**
 
-- Each task includes an optional due date and priority level, making it simple to organize tasks based on deadlines and importance.
+---
 
-### 2. Automatic Persistent Storage:
-- Tasks are saved to a tasks.json file automatically whenever a task is added, deleted, or cleared. This ensures that all tasks are saved immediately and will persist even after the application is closed, without needing a manual save button.
+## **👨‍🎓 Submitted By**  
+- **Name**: Pawan Singh Rajwar  
+- **SAP ID**: 590017545  
 
-### 3. Date and Priority Selection:
-- Each task can include a due date, which is selected from a date picker widget (tkcalendar). This ensures only valid dates are entered.
+---
 
-- Tasks can also be assigned one of three priority levels: High, Medium, or Low, using a dropdown menu to make organization clearer.
+## **📄 Project Title**  
+**Modern To-Do List Application**
 
-### 4. Search Functionality:
-- The search bar enables users to filter tasks based on keywords, making it easy to locate specific tasks within a large list.
+---
 
-### 5. Modern and Aesthetic GUI:
-- The interface features a dark, minimalist theme with contrasting button colors for a sleek, modern look. It is optimized for readability and usability, with a consistent color scheme throughout the app.
+## **📖 Description**  
+This project is a **Modern To-Do List Application** built with Python's Tkinter library. It provides a clean and functional GUI for managing daily tasks with features like **task prioritization**, **due dates**, and **search functionality**. Tasks are saved automatically, ensuring persistence across sessions, and the dark, minimalist theme enhances user experience.
 
+---
 
-## Code Structure and Explanation
+## **✨ Key Features**
+### 🧹 **Task Management**:
+- Add, delete, and clear tasks in a user-friendly interface.
+- Assign due dates and priority levels to tasks for better organization.
 
-### 1. Main Interface:
-- Window Initialization: The main window is set up using Tkinter, with custom dimensions and a dark-themed color scheme for aesthetics.
+### 📂 **Automatic Persistent Storage**:
+- Tasks are saved automatically in a `tasks.json` file, ensuring no data loss even after the app is closed.
 
-- Listbox: A Listbox widget displays the list of tasks. Each entry shows the task text, due date, and priority, providing an overview of all tasks. A scrollbar is added for convenience when there are many tasks.
+### 📅 **Date and Priority Selection**:
+- Select valid due dates using a **date picker widget** (`tkcalendar`).
+- Assign tasks a priority level (**High, Medium, Low**) using a dropdown menu.
 
-### 2. Automatic Data Handling:
-- Loading Tasks: The load_tasks() function reads data from tasks.json upon startup. If the file doesn’t exist or is empty, an empty list is initialized.
+### 🔍 **Search Functionality**:
+- Use the search bar to filter tasks by keywords, making it easy to find specific tasks.
 
-- Saving Tasks: The save_tasks() function automatically writes the current task list to tasks.json each time a task is added, deleted, or cleared, ensuring tasks are consistently saved.
+### 🎨 **Modern and Aesthetic GUI**:
+- Features a **dark, minimalist theme** with intuitive layouts and button styling for a clean and modern look.
 
-### 3. Task Addition:
-- Add Task: Users enter a task description in the entry box and can then select a due date and priority level. The app verifies that a task name, valid due date, and priority level are entered before adding it.
+---
 
-- Due Date Picker: The DateEntry widget from tkcalendar allows users to pick only valid dates.
+## **🔧 Installation**
+### Clone the repository:
+```bash
+git clone https://github.com/your-repo-link/modern-to-do-list.git
+cd modern-to-do-list
+```
 
-- Priority Dropdown: Users select a priority level (High, Medium, Low) from a dropdown menu, allowing for organized task sorting.
+### Install dependencies:
+```bash
+pip install tkcalendar
+```
 
-### 4. Task Deletion and Clear Functionality:
-- Delete Task: A task selected in the Listbox can be deleted by clicking "Delete Task." This action updates the Listbox display and automatically saves changes.
+### Run the application:
+```bash
+python modern_to_do_list.py
+```
 
-- Clear All Tasks: The "Clear All" button removes all tasks after confirming, ensuring that no data is accidentally cleared.
+---
 
-### 5. Search Functionality:
-- The search entry box allows users to filter tasks by entering keywords. The search_tasks() function compares the input with each task description, updating the Listbox to show only matching tasks.
+## **📚 Usage**
+1. **Start the Application**:
+   - Launch the app by running the Python script.  
+   - The main window will display a list of tasks, and you can add, delete, search, or clear tasks.
 
-### 6. Button Styling and Layout:
-- Buttons are grouped within frames to maintain a clean and organized layout.
+2. **Add a Task**:
+   - Enter a task description, select a due date using the date picker, and assign a priority level.
+   - Click **Add Task** to add it to the list.
 
-- Buttons are styled with a modern look, using specific colors and fonts consistent with the app’s theme.
+3. **Delete or Clear Tasks**:
+   - Select a task in the list and click **Delete Task** to remove it.  
+   - Use the **Clear All** button to remove all tasks after confirming.
 
-- Add Task, Delete Task, Clear All, and Search buttons provide intuitive access to the main features.
+4. **Search Tasks**:
+   - Type a keyword in the search bar to filter tasks. Only tasks containing the keyword will appear.
 
+5. **Persistent Storage**:
+   - Tasks are automatically saved to `tasks.json` whenever you make changes.
 
-## Screenshots 
+---
 
-![To-do list ](<Screenshot 2024-11-25 122402-1.png>)
+## **🛠️ Libraries Used**
+1. **`tkinter`**: For building the GUI.
+2. **`tkcalendar`**: For the date picker widget.
+3. **`json`**: For saving and loading tasks persistently.
+
+---
+
+## **📸 Screenshots**
+
+### ✅ **Main Interface**
+![To-do list Screenshot](<Screenshot 2024-11-25 122402-1.png>)
+
+### 🔥 **Priority Selection**
 ![Priority Functionality](<Screenshot 2024-11-25 122416-1.png>)
+
+### ✨ **Added Task Display**
 ![Added Task Screenshot](<Screenshot 2024-11-25 122431-1.png>)
-
-
-
-
-
-
-
-
-## Requirements
-- Python 3.x
-
-- tkinter (included with Python)
-
-- tkcalendar: Install this package by running pip install tkcalendar.
